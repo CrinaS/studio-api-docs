@@ -97,7 +97,7 @@ project.CheckinFiles(fileIds, "This is where you add a check in comment",
 Adding new files to the server
 --
 
-If you add a new file to a server project, checking in the file uploads it to the Project Server so other users can work with the file. The steps to add a new file are identical to adding a file to a local project but with the one extra step of checking in the files and uploading them to the server.
+If you add a new file to a server project, checking in the file uploads it to the Project Server so other users can work with the file. The steps to add a new file are similar to adding a file to a local project but with few extra steps of checking in the files and uploading them to the server.
 
 The following example uploads and checks in all the new source files that have been added to the project.
 
@@ -107,7 +107,8 @@ Guid[] sourceFileIds = project.GetSourceLanguageFiles()
     .Where(file => file.LocalFileState == LocalFileState.New)
     .GetIds();
 
-project.CheckinFiles(sourceFileIds, "New Source Files",
+var serverBasedProjectOperations = new ServerBasedProjectOperations(project);            
+serverBasedProjectOperations.UploadAndCheckinFiles(sourceFileIds, "New Source Files",
      (obj, evt) =>
      {
          Console.WriteLine(evt.StatusMessage + " " + evt.PercentComplete + "% complete");
@@ -122,7 +123,7 @@ project.CheckinFiles(sourceFileIds, "New Source Files",
 
 >[!NOTE]
 >
->Use the [CheckinFiles](../../api/projectautomation/Sdl.ProjectAutomation.FileBased.FileBasedProject.yml#Sdl_ProjectAutomation_FileBased_FileBasedProject_CheckinFiles_System_Guid___System_String_System_EventHandler_Sdl_ProjectAutomation_Core_ProgressEventArgs__) method when checking in a new or modified file. This will make sure that a new version of the file is created on the server and that it is available for other users to check out.
+>Use the [CheckinFiles](../../api/projectautomation/Sdl.ProjectAutomation.FileBased.FileBasedProject.yml#Sdl_ProjectAutomation_FileBased_FileBasedProject_CheckinFiles_System_Guid___System_String_System_EventHandler_Sdl_ProjectAutomation_Core_ProgressEventArgs__) method when checking in a modified file and use the [UploadAndCheckinFiles](../../api/projectautomation/Sdl.ProjectAutomation.FileBased.ServerOperations.yml#Sdl_ProjectAutomation_FileBased_FileBasedProject_UploadAndCheckinFiles_System_Guid___System_String_System_EventHandler_Sdl_ProjectAutomation_Core_ProgressEventArgs__) method when check in new added files. This will make sure that a new version of the file is created on the server and that it is available for other users to check out.
 
 Undo file check out
 --
