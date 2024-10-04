@@ -5,44 +5,17 @@
   items:
   - name: Plug-in Framework Overview
     href: core/overview.md
-  - name: Basic Use Cases
-    href: core/basic_use_cases.md
-    items:
-    - name: Basic Use Cases
-      href: core/basic_use_cases.md
-    - name: Defining an Extension Point
-      href: core/defining_an_extension_point.md
-    - name: Creating Extensions
-      href: core/creating_extensions.md
-    - name: Creating the Host Apllication
-      href: core/creating_the_host_application.md
-  - name: Advanced Use Cases
-    href: core/advanced_use_cases.md
-    items:
-    - name: Advanced Use Cases
-      href: core/advanced_use_cases.md
-    - name: The Plug-in Registry
-      href: core/the_plugin_registry.md
-    - name: Object Registry
-      href: core/object_registry.md
-    - name: Auxiliary Extension Attributes
-      href: core/auxiliary_extension_attributes.md
-    - name: Sortable Extension Points
-      href: core/sortable_extension_points.md
+  - name: Plugin overview
+    href: core/pluginOverview.md
+    items:            
     - name: Plug-in Resources and Localizability
-      href: core/plugin_resources_and_localizability.md
-    - name: Deployment
-      href: core/deployment.md
-    - name: Plug-in State
-      href: core/plugin_state.md
-    - name: Plug-in State Handlers
-      href: core/plugin_state_handlers.md
+      href: core/plugin_resources_and_localizability.md    
     - name: The Plug-in Manifest Generator
       href: core/the_plugin_manifest_generator.md
-    - name: Compile-time Validation
-      href: core/compile_time_validation.md
     - name: Serialization Performance
       href: core/serialization_performance.md
+  - name: Extensions and extension points
+    href: core/extensions.md 
   - name: API Reference
     href: ../api/core/toc.yml
 - name: File Type Support
@@ -689,6 +662,8 @@
       href: integration/creating_ribbon_groups.md
     - name: Creating actions
       href: integration/creating_actions.md
+    - name: Adding custom steps to wizards
+      href: integration/adding_custom_wizard_steps.md
     - name: Samples
       href: integration/integrating_views.md
       items:
@@ -708,6 +683,8 @@
         href: integration/project_creator.md
       - name: Wikipedia Search
         href: integration/wikipedia_search.md
+      - name: Implementing a custom job
+        href: integration/implementing_custom_job.md
   - name: Trados Studio Automation
     href: integration/studio_automation.md
     items:
@@ -730,21 +707,29 @@
         href: integration/files_controller.md
       - name: Editor controller
         href: integration/editor_controller.md
-      - name: Integration Samples
-        href: integration/integration_samples.md
-        items:
-        - name: Trados Studio application initializers
-          href: integration/trados_studio_application_initializers.md
-        - name: Trados Studio AutoSuggest provider
-          href: integration/trados_studio_autosuggest_provider.md
-        - name: Trados Studio command line processor
-          href: integration/trados_studio_command_processor.md
-        - name: Using Trados Studio ProjectsController
-          href: integration/using_trados_studio_projectscontroller.md
-        - name: Using Trados Studio FilesController
-          href: integration/using_trados_studio_filescontroller.md
-        - name: Using Trados Studio EditorController
-          href: integration/using_trados_studio_editorcontroller.md
+    - name: Extend default packaging functionality
+      href: integration/extend_standard_packaging_support.md
+    - name: Integration Samples
+      href: integration/integration_samples.md
+      items:
+      - name: Trados Studio application initializers
+        href: integration/trados_studio_application_initializers.md
+      - name: Trados Studio AutoSuggest provider
+        href: integration/trados_studio_autosuggest_provider.md
+      - name: Trados Studio command line processor
+        href: integration/trados_studio_command_processor.md
+      - name: Using Trados Studio ProjectsController
+        href: integration/using_trados_studio_projectscontroller.md
+      - name: Using Trados Studio FilesController
+        href: integration/using_trados_studio_filescontroller.md
+      - name: Using Trados Studio EditorController
+        href: integration/using_trados_studio_editorcontroller.md
+      - name: Customizing the Open Package Wizard Sample
+        href: integration/customize_open_package_wizard.md
+      - name: Customizing the Create Return Package Wizard Sample
+        href: integration/customize_create_return_package_wizard.md
+      - name: Processing custom project package formats
+        href: integration/process_custom_project_package_formats.md
   - name: Bilingual API
     href: integration/bilingual_api.md
     items: 
@@ -857,10 +842,6 @@
     href: ../api/terminology/toc.yml
 - name: Release Notes
   href: releasenotes/overview.md
-  items:
-  - name: Release Notes for Trados Studio 2021
-    href: releasenotes/tradosstudio2021.md
-  - name: Release Notes for Trados Studio 2021 SR1
-    href: releasenotes/tradosstudio2021sr1.md
-  - name: Release Notes for Trados Studio 2021 SR1 CU5
-    href: releasenotes/tradosstudio2021sr1cu5.md
+  items: 
+  - name: Release Notes for Trados Studio 2024
+    href: releasenotes/tradosstudio2024.md

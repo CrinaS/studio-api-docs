@@ -1,4 +1,5 @@
 ### YamlMime:TableOfContent
+items:
 - uid: Sdl.Verification.Api
   name: Sdl.Verification.Api
   items:
@@ -28,6 +29,8 @@
     name: ITermVerifierSettingsContext
   - uid: Sdl.Verification.Api.ITermVerifierSettingsContextAware
     name: ITermVerifierSettingsContextAware
+  - uid: Sdl.Verification.Api.IVerificationCustomMessageData
+    name: IVerificationCustomMessageData
   - uid: Sdl.Verification.Api.LanguageDirectionVerifierAttribute
     name: LanguageDirectionVerifierAttribute
   - uid: Sdl.Verification.Api.MessageControlPlugInAttribute
@@ -40,3 +43,4 @@
     name: TermPicklistField
   - uid: Sdl.Verification.Api.WrongSettingsFileException
     name: WrongSettingsFileException
+memberLayout: SamePage

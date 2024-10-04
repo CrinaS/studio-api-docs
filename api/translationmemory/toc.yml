@@ -1,7 +1,10 @@
 ### YamlMime:TableOfContent
+items:
 - uid: Sdl.Core.FineGrainedAlignment
   name: Sdl.Core.FineGrainedAlignment
   items:
+  - uid: Sdl.Core.FineGrainedAlignment.AlignResult
+    name: AlignResult
   - uid: Sdl.Core.FineGrainedAlignment.AlignableContentPairId
     name: AlignableContentPairId
   - uid: Sdl.Core.FineGrainedAlignment.AlignableCorpusId
@@ -10,10 +13,10 @@
     name: AlignedPhrase
   - uid: Sdl.Core.FineGrainedAlignment.AlignerDefinition
     name: AlignerDefinition
+  - uid: Sdl.Core.FineGrainedAlignment.AlignerSettings
+    name: AlignerSettings
   - uid: Sdl.Core.FineGrainedAlignment.AlignmentEvidence
     name: AlignmentEvidence
-  - uid: Sdl.Core.FineGrainedAlignment.AlignResult
-    name: AlignResult
   - uid: Sdl.Core.FineGrainedAlignment.BilingualChiSquareComputer3
     name: BilingualChiSquareComputer3
   - uid: Sdl.Core.FineGrainedAlignment.BilingualPhraseComputer3
@@ -44,8 +47,12 @@
     name: IAlignableContentPair
   - uid: Sdl.Core.FineGrainedAlignment.IAlignableCorpus
     name: IAlignableCorpus
+  - uid: Sdl.Core.FineGrainedAlignment.IAlignableCorpusAsync
+    name: IAlignableCorpusAsync
   - uid: Sdl.Core.FineGrainedAlignment.IAlignableCorpusManager
     name: IAlignableCorpusManager
+  - uid: Sdl.Core.FineGrainedAlignment.IAlignableCorpusManagerAsync
+    name: IAlignableCorpusManagerAsync
   - uid: Sdl.Core.FineGrainedAlignment.IAlignerBroker
     name: IAlignerBroker
   - uid: Sdl.Core.FineGrainedAlignment.IAlignerService
@@ -56,6 +63,8 @@
     name: IChiSquaredTranslationModelStoreReadOnly
   - uid: Sdl.Core.FineGrainedAlignment.IFineGrainedAligner
     name: IFineGrainedAligner
+  - uid: Sdl.Core.FineGrainedAlignment.IPairEnumerator
+    name: IPairEnumerator
   - uid: Sdl.Core.FineGrainedAlignment.ITranslationModelDataService
     name: ITranslationModelDataService
   - uid: Sdl.Core.FineGrainedAlignment.ITranslationModelManagementService
@@ -94,28 +103,37 @@
     name: TrainedTranslationModelId
   - uid: Sdl.Core.FineGrainedAlignment.TranslationModel
     name: TranslationModel
+  - uid: Sdl.Core.FineGrainedAlignment.TranslationModelBuilderSettings
+    name: TranslationModelBuilderSettings
   - uid: Sdl.Core.FineGrainedAlignment.TranslationModelCancelException
     name: TranslationModelCancelException
   - uid: Sdl.Core.FineGrainedAlignment.TranslationModelDetails
     name: TranslationModelDetails
+  - uid: Sdl.Core.FineGrainedAlignment.TranslationModelException
+    name: TranslationModelException
   - uid: Sdl.Core.FineGrainedAlignment.TranslationModelFitness
     name: TranslationModelFitness
   - uid: Sdl.Core.FineGrainedAlignment.TranslationModelId
     name: TranslationModelId
-  - uid: Sdl.Core.FineGrainedAlignment.TranslationModelMatrixEntry
-    name: TranslationModelMatrixEntry
   - uid: Sdl.Core.FineGrainedAlignment.TranslationModelProgressEventArgs
     name: TranslationModelProgressEventArgs
   - uid: Sdl.Core.FineGrainedAlignment.TranslationModelProgressStage
     name: TranslationModelProgressStage
   - uid: Sdl.Core.FineGrainedAlignment.TranslationModelTypes
     name: TranslationModelTypes
-  - uid: Sdl.Core.FineGrainedAlignment.TranslationModelVocabEntry
-    name: TranslationModelVocabEntry
   - uid: Sdl.Core.FineGrainedAlignment.VocabularyFile3
     name: VocabularyFile3
   - uid: Sdl.Core.FineGrainedAlignment.WordAlignmentComputer3
     name: WordAlignmentComputer3
+- uid: Sdl.Core.FineGrainedAlignment.Model
+  name: Sdl.Core.FineGrainedAlignment.Model
+  items:
+  - uid: Sdl.Core.FineGrainedAlignment.Model.TranslationModelMatrixEntry
+    name: TranslationModelMatrixEntry
+  - uid: Sdl.Core.FineGrainedAlignment.Model.TranslationModelTuMatrixRequest
+    name: TranslationModelTuMatrixRequest
+  - uid: Sdl.Core.FineGrainedAlignment.Model.TranslationModelVocabEntry
+    name: TranslationModelVocabEntry
 - uid: Sdl.Core.LanguageProcessing.Tokenization
   name: Sdl.Core.LanguageProcessing.Tokenization
   items:
@@ -130,16 +148,24 @@
     name: BatchImportedEventArgs
   - uid: Sdl.Core.TM.ImportExport.Exporter
     name: Exporter
+  - uid: Sdl.Core.TM.ImportExport.ExporterAsync
+    name: ExporterAsync
   - uid: Sdl.Core.TM.ImportExport.IExportOrigin
     name: IExportOrigin
+  - uid: Sdl.Core.TM.ImportExport.IExportOriginAsync
+    name: IExportOriginAsync
   - uid: Sdl.Core.TM.ImportExport.IImportDestination
     name: IImportDestination
-  - uid: Sdl.Core.TM.ImportExport.Importer
-    name: Importer
-  - uid: Sdl.Core.TM.ImportExport.Importer.ImportResultsMap
-    name: Importer.ImportResultsMap
+  - uid: Sdl.Core.TM.ImportExport.IImportDestinationAsync
+    name: IImportDestinationAsync
   - uid: Sdl.Core.TM.ImportExport.ImportExportResponse
     name: ImportExportResponse
+  - uid: Sdl.Core.TM.ImportExport.Importer
+    name: Importer
+  - uid: Sdl.Core.TM.ImportExport.ImporterAsync
+    name: ImporterAsync
+  - uid: Sdl.Core.TM.ImportExport.ImporterAsync.ImportResultsMap
+    name: ImporterAsync.ImportResultsMap
   - uid: Sdl.Core.TM.ImportExport.LanguageMismatchException
     name: LanguageMismatchException
   - uid: Sdl.Core.TM.ImportExport.TmApiImportExport
@@ -171,15 +197,12 @@
     name: FaultStatus
   - uid: Sdl.LanguagePlatform.Core.ISegmentElementVisitor
     name: ISegmentElementVisitor
-  - uid: Sdl.LanguagePlatform.Core.LanguageMetadata
-    name: LanguageMetadata
   - uid: Sdl.LanguagePlatform.Core.LanguagePair
     name: LanguagePair
   - uid: Sdl.LanguagePlatform.Core.LanguagePlatformException
     name: LanguagePlatformException
   - uid: Sdl.LanguagePlatform.Core.Pair`1
     name: Pair<T>
-    name.vb: Pair(Of T)
   - uid: Sdl.LanguagePlatform.Core.SearchOption
     name: SearchOption
   - uid: Sdl.LanguagePlatform.Core.Segment
@@ -228,8 +251,12 @@
   items:
   - uid: Sdl.LanguagePlatform.Core.Resources.IResourceDataAccessor
     name: IResourceDataAccessor
+  - uid: Sdl.LanguagePlatform.Core.Resources.IResourceDataAccessorAsync
+    name: IResourceDataAccessorAsync
   - uid: Sdl.LanguagePlatform.Core.Resources.LanguageResourceType
     name: LanguageResourceType
+  - uid: Sdl.LanguagePlatform.Core.Resources.ResourceDataAccessorAsyncWrapper
+    name: ResourceDataAccessorAsyncWrapper
   - uid: Sdl.LanguagePlatform.Core.Resources.ResourceStatus
     name: ResourceStatus
 - uid: Sdl.LanguagePlatform.Core.Segmentation
@@ -287,12 +314,6 @@
     name: NumberToken
   - uid: Sdl.LanguagePlatform.Core.Tokenization.NumericSeparator
     name: NumericSeparator
-  - uid: Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnit
-    name: PhysicalUnit
-  - uid: Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnitDescription
-    name: PhysicalUnitDescription
-  - uid: Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnitDescriptions
-    name: PhysicalUnitDescriptions
   - uid: Sdl.LanguagePlatform.Core.Tokenization.PrioritizedToken
     name: PrioritizedToken
   - uid: Sdl.LanguagePlatform.Core.Tokenization.Sign
@@ -305,20 +326,16 @@
     name: Token
   - uid: Sdl.LanguagePlatform.Core.Tokenization.TokenBundle
     name: TokenBundle
+  - uid: Sdl.LanguagePlatform.Core.Tokenization.TokenType
+    name: TokenType
   - uid: Sdl.LanguagePlatform.Core.Tokenization.TokenizationContext
     name: TokenizationContext
   - uid: Sdl.LanguagePlatform.Core.Tokenization.TokenizerFlags
     name: TokenizerFlags
-  - uid: Sdl.LanguagePlatform.Core.Tokenization.TokenType
-    name: TokenType
   - uid: Sdl.LanguagePlatform.Core.Tokenization.Unit
     name: Unit
   - uid: Sdl.LanguagePlatform.Core.Tokenization.UnitSeparationMode
     name: UnitSeparationMode
-  - uid: Sdl.LanguagePlatform.Core.Tokenization.UnitSystem
-    name: UnitSystem
-  - uid: Sdl.LanguagePlatform.Core.Tokenization.UnitType
-    name: UnitType
 - uid: Sdl.LanguagePlatform.IO
   name: Sdl.LanguagePlatform.IO
   items:
@@ -346,6 +363,18 @@
 - uid: Sdl.LanguagePlatform.IO.TMX
   name: Sdl.LanguagePlatform.IO.TMX
   items:
+  - uid: Sdl.LanguagePlatform.IO.TMX.TMXReader
+    name: TMXReader
+  - uid: Sdl.LanguagePlatform.IO.TMX.TMXReaderSettings
+    name: TMXReaderSettings
+  - uid: Sdl.LanguagePlatform.IO.TMX.TMXStartOfInputEvent
+    name: TMXStartOfInputEvent
+  - uid: Sdl.LanguagePlatform.IO.TMX.TMXTools
+    name: TMXTools
+  - uid: Sdl.LanguagePlatform.IO.TMX.TMXWriter
+    name: TMXWriter
+  - uid: Sdl.LanguagePlatform.IO.TMX.TMXWriterSettings
+    name: TMXWriterSettings
   - uid: Sdl.LanguagePlatform.IO.TMX.body
     name: body
   - uid: Sdl.LanguagePlatform.IO.TMX.bpt
@@ -376,18 +405,6 @@
     name: sub
   - uid: Sdl.LanguagePlatform.IO.TMX.tmx
     name: tmx
-  - uid: Sdl.LanguagePlatform.IO.TMX.TMXReader
-    name: TMXReader
-  - uid: Sdl.LanguagePlatform.IO.TMX.TMXReaderSettings
-    name: TMXReaderSettings
-  - uid: Sdl.LanguagePlatform.IO.TMX.TMXStartOfInputEvent
-    name: TMXStartOfInputEvent
-  - uid: Sdl.LanguagePlatform.IO.TMX.TMXTools
-    name: TMXTools
-  - uid: Sdl.LanguagePlatform.IO.TMX.TMXWriter
-    name: TMXWriter
-  - uid: Sdl.LanguagePlatform.IO.TMX.TMXWriterSettings
-    name: TMXWriterSettings
   - uid: Sdl.LanguagePlatform.IO.TMX.tu
     name: tu
   - uid: Sdl.LanguagePlatform.IO.TMX.tuSegtype
@@ -439,29 +456,36 @@
     name: FieldType
   - uid: Sdl.LanguagePlatform.TranslationMemory.FieldValue
     name: FieldValue
-  - uid: Sdl.LanguagePlatform.TranslationMemory.FieldValues
-    name: FieldValues
   - uid: Sdl.LanguagePlatform.TranslationMemory.FieldValueType
     name: FieldValueType
+  - uid: Sdl.LanguagePlatform.TranslationMemory.FieldValues
+    name: FieldValues
   - uid: Sdl.LanguagePlatform.TranslationMemory.Filter
     name: Filter
   - uid: Sdl.LanguagePlatform.TranslationMemory.FilterExpression
     name: FilterExpression
   - uid: Sdl.LanguagePlatform.TranslationMemory.FilterExpressionParser
     name: FilterExpressionParser
-  - uid: Sdl.LanguagePlatform.TranslationMemory.FuzzyIndexes
-    name: FuzzyIndexes
   - uid: Sdl.LanguagePlatform.TranslationMemory.FuzzyIndexTuningSettings
     name: FuzzyIndexTuningSettings
+  - uid: Sdl.LanguagePlatform.TranslationMemory.FuzzyIndexes
+    name: FuzzyIndexes
+  - uid: Sdl.LanguagePlatform.TranslationMemory.IAttribute
+    name: IAttribute
   - uid: Sdl.LanguagePlatform.TranslationMemory.IField
     name: IField
   - uid: Sdl.LanguagePlatform.TranslationMemory.IFieldDefinitions
     name: IFieldDefinitions
+  - uid: Sdl.LanguagePlatform.TranslationMemory.IFieldTemplate
+    name: IFieldTemplate
   - uid: Sdl.LanguagePlatform.TranslationMemory.IFieldValueComparer`1
     name: IFieldValueComparer<T>
-    name.vb: IFieldValueComparer(Of T)
   - uid: Sdl.LanguagePlatform.TranslationMemory.ILogLogger
     name: ILogLogger
+  - uid: Sdl.LanguagePlatform.TranslationMemory.IPicklistItem
+    name: IPicklistItem
+  - uid: Sdl.LanguagePlatform.TranslationMemory.ITypedKeyValueContainer
+    name: ITypedKeyValueContainer
   - uid: Sdl.LanguagePlatform.TranslationMemory.ImportResult
     name: ImportResult
   - uid: Sdl.LanguagePlatform.TranslationMemory.ImportResults
@@ -482,8 +506,6 @@
     name: ImportStatus
   - uid: Sdl.LanguagePlatform.TranslationMemory.IntFieldValue
     name: IntFieldValue
-  - uid: Sdl.LanguagePlatform.TranslationMemory.ITypedKeyValueContainer
-    name: ITypedKeyValueContainer
   - uid: Sdl.LanguagePlatform.TranslationMemory.LogManager
     name: LogManager
   - uid: Sdl.LanguagePlatform.TranslationMemory.MachineTranslationLookupMode
@@ -554,11 +576,10 @@
     name: SortDisambiguator
   - uid: Sdl.LanguagePlatform.TranslationMemory.SortDisambiguator.Disambiguator
     name: SortDisambiguator.Disambiguator
-  - uid: Sdl.LanguagePlatform.TranslationMemory.Sorter`1
-    name: Sorter<T>
-    name.vb: Sorter(Of T)
   - uid: Sdl.LanguagePlatform.TranslationMemory.SortSpecification
     name: SortSpecification
+  - uid: Sdl.LanguagePlatform.TranslationMemory.Sorter`1
+    name: Sorter<T>
   - uid: Sdl.LanguagePlatform.TranslationMemory.SubsegmentMatchType
     name: SubsegmentMatchType
   - uid: Sdl.LanguagePlatform.TranslationMemory.SubsegmentSearchCondition
@@ -573,6 +594,10 @@
     name: SubsegmentSearchSettings
   - uid: Sdl.LanguagePlatform.TranslationMemory.SystemFields
     name: SystemFields
+  - uid: Sdl.LanguagePlatform.TranslationMemory.SystemFieldsKeys
+    name: SystemFieldsKeys
+  - uid: Sdl.LanguagePlatform.TranslationMemory.SystemFieldsParameters
+    name: SystemFieldsParameters
   - uid: Sdl.LanguagePlatform.TranslationMemory.TextContextMatch
     name: TextContextMatch
   - uid: Sdl.LanguagePlatform.TranslationMemory.TextContextMatchType
@@ -593,10 +618,14 @@
     name: TuContexts
   - uid: Sdl.LanguagePlatform.TranslationMemory.TuIdContexts
     name: TuIdContexts
+  - uid: Sdl.LanguagePlatform.TranslationMemory.TuLimitsValidatorSettings
+    name: TuLimitsValidatorSettings
   - uid: Sdl.LanguagePlatform.TranslationMemory.Utilities
     name: Utilities
   - uid: Sdl.LanguagePlatform.TranslationMemory.WordCountFlags
     name: WordCountFlags
+  - uid: Sdl.LanguagePlatform.TranslationMemory.WordCounter
+    name: WordCounter
   - uid: Sdl.LanguagePlatform.TranslationMemory.WordCounts
     name: WordCounts
   - uid: Sdl.LanguagePlatform.TranslationMemory.WordCountsOptions
@@ -645,9 +674,6 @@
     name: BatchExportedEventArgs
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.BatchImportedEventArgs
     name: BatchImportedEventArgs
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Cascade`1
-    name: Cascade<T>
-    name.vb: Cascade(Of T)
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.CascadeEntry
     name: CascadeEntry
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.CascadeException
@@ -656,24 +682,14 @@
     name: CascadeMessage
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.CascadeMessageCode
     name: CascadeMessageCode
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.CloudBasedTranslationMemory
-    name: CloudBasedTranslationMemory
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.CloudBasedTranslationMemoryLanguageDirection
-    name: CloudBasedTranslationMemoryLanguageDirection
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.CloudBasedTranslationMemoryLanguageDirectionCollection
-    name: CloudBasedTranslationMemoryLanguageDirectionCollection
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.CloudTranslationProvider
-    name: CloudTranslationProvider
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ContainerProperties
-    name: ContainerProperties
+  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Cascade`1
+    name: Cascade<T>
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.DatabaseServer
     name: DatabaseServer
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.DatabaseServerAuthenticationType
     name: DatabaseServerAuthenticationType
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.DatabaseServerPermissions
     name: DatabaseServerPermissions
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.DatabaseServerProperties
-    name: DatabaseServerProperties
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.DatabaseServerType
     name: DatabaseServerType
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.DefaultLanguageResourceProvider
@@ -682,8 +698,6 @@
     name: FieldDefinition
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.FieldDefinitionCollection
     name: FieldDefinitionCollection
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.FieldsTemplateProperties
-    name: FieldsTemplateProperties
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.FileBasedLanguageResourcesTemplate
     name: FileBasedLanguageResourcesTemplate
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.FileBasedTranslationMemory
@@ -710,12 +724,6 @@
     name: ILanguageResourcesTemplate
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ILocalTranslationMemory
     name: ILocalTranslationMemory
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ImportExportOperationBase
-    name: ImportExportOperationBase
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ImportExportResponse
-    name: ImportExportResponse
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.InMemoryTranslationMemory
-    name: InMemoryTranslationMemory
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.IPermissionCheck
     name: IPermissionCheck
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.IReindexableTranslationMemory
@@ -744,16 +752,16 @@
     name: ITranslationProviderSummaryFactory
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ITranslationProviderWinFormsUI
     name: ITranslationProviderWinFormsUI
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.LanguageDirectionProperties
-    name: LanguageDirectionProperties
+  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ImportExportOperationBase
+    name: ImportExportOperationBase
+  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.InMemoryTranslationMemory
+    name: InMemoryTranslationMemory
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.LanguageResourceBundle
     name: LanguageResourceBundle
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.LanguageResourceBundleCollection
     name: LanguageResourceBundleCollection
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.LanguageResourceEntity
     name: LanguageResourceEntity
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.LanguageResourcesTemplateProperties
-    name: LanguageResourcesTemplateProperties
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.LicensingStatusInformation
     name: LicensingStatusInformation
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.NullPropertyException
@@ -776,12 +784,6 @@
     name: ProviderStatusInfo
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.RemoteTranslationMemory
     name: RemoteTranslationMemory
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ResourcePicker
-    name: ResourcePicker
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ScheduledFieldApplyOperation
-    name: ScheduledFieldApplyOperation
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ScheduledLanguageResourcesApplyOperation
-    name: ScheduledLanguageResourcesApplyOperation
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ScheduledOperation
     name: ScheduledOperation
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ScheduledOperationStatus
@@ -804,8 +806,6 @@
     name: ServerBasedTranslationMemoryLanguageDirection
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ServerBasedTranslationMemoryLanguageDirectionCollection
     name: ServerBasedTranslationMemoryLanguageDirectionCollection
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ServerBasedTranslationMemoryVersion
-    name: ServerBasedTranslationMemoryVersion
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.ServerImportStatus
     name: ServerImportStatus
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.StringResources
@@ -832,8 +832,6 @@
     name: TranslationMemoryProperties
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.TranslationMemoryQuery
     name: TranslationMemoryQuery
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.TranslationMemoryQueryFilters
-    name: TranslationMemoryQueryFilters
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.TranslationMemorySearchResultConverters
     name: TranslationMemorySearchResultConverters
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.TranslationMemoryUpgradeUtil
@@ -852,8 +850,6 @@
     name: TranslationProviderDisplayInfo
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.TranslationProviderFactoryAttribute
     name: TranslationProviderFactoryAttribute
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.TranslationProviderHelper
-    name: TranslationProviderHelper
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.TranslationProviderInfo
     name: TranslationProviderInfo
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.TranslationProviderManager
@@ -864,8 +860,6 @@
     name: TranslationProviderUriBuilder
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.TranslationProviderWinFormsUiAttribute
     name: TranslationProviderWinFormsUiAttribute
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.TranslationSequenceProperties
-    name: TranslationSequenceProperties
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.TranslationUnitPermissions
     name: TranslationUnitPermissions
 - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Helpers
@@ -900,7 +894,6 @@
     name: IInputTranslationMemoryCollection
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.IItemCollection`1
     name: IItemCollection<T>
-    name.vb: IItemCollection(Of T)
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ILegacyLanguageDirectionData
     name: ILegacyLanguageDirectionData
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ILegacyLanguageResources
@@ -911,26 +904,10 @@
     name: ILegacyTranslationMemorySetup
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.IMigrationProject
     name: IMigrationProject
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.InputLanguagePair
-    name: InputLanguagePair
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.InputLanguagePairCollection
-    name: InputLanguagePairCollection
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.IOutputTranslationMemory
     name: IOutputTranslationMemory
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.IOutputTranslationMemoryCollection
     name: IOutputTranslationMemoryCollection
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ItemCollection`1
-    name: ItemCollection<T>
-    name.vb: ItemCollection(Of T)
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ItemCollectionAddedEventArgs`1
-    name: ItemCollectionAddedEventArgs<T>
-    name.vb: ItemCollectionAddedEventArgs(Of T)
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ItemCollectionEventArgs`1
-    name: ItemCollectionEventArgs<T>
-    name.vb: ItemCollectionEventArgs(Of T)
-  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ItemCollectionRemovedEventArgs`1
-    name: ItemCollectionRemovedEventArgs<T>
-    name.vb: ItemCollectionRemovedEventArgs(Of T)
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ITmxLegacyTranslationMemory
     name: ITmxLegacyTranslationMemory
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ITranslationMemoryCreator
@@ -939,6 +916,18 @@
     name: ITranslationMemoryExporter
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ITranslationMemorySetupOptions
     name: ITranslationMemorySetupOptions
+  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.InputLanguagePair
+    name: InputLanguagePair
+  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.InputLanguagePairCollection
+    name: InputLanguagePairCollection
+  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ItemCollectionAddedEventArgs`1
+    name: ItemCollectionAddedEventArgs<T>
+  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ItemCollectionEventArgs`1
+    name: ItemCollectionEventArgs<T>
+  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ItemCollectionRemovedEventArgs`1
+    name: ItemCollectionRemovedEventArgs<T>
+  - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.ItemCollection`1
+    name: ItemCollection<T>
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.LegacyLanguage
     name: LegacyLanguage
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.LegacyLanguagePair
@@ -949,3 +938,4 @@
     name: ProgressEventArgs
   - uid: Sdl.LanguagePlatform.TranslationMemoryApi.Upgrade.TmxFileStatus
     name: TmxFileStatus
+memberLayout: SamePage

@@ -21,21 +21,12 @@ items:
   nameWithType: IImportDestination
   fullName: Sdl.Core.TM.ImportExport.IImportDestination
   type: Interface
-  source:
-    path: Sdl.Core.TM.ImportExport
-    isExternal: true
   assemblies:
   - Sdl.Core.TM.ImportExport
   namespace: Sdl.Core.TM.ImportExport
   syntax:
     content: public interface IImportDestination
     content.vb: Public Interface IImportDestination
-  modifiers.csharp:
-  - public
-  - interface
-  modifiers.vb:
-  - Public
-  - Interface
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnits(Sdl.LanguagePlatform.TranslationMemory.TranslationUnit[],Sdl.LanguagePlatform.TranslationMemory.ImportSettings)
   commentId: M:Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnits(Sdl.LanguagePlatform.TranslationMemory.TranslationUnit[],Sdl.LanguagePlatform.TranslationMemory.ImportSettings)
   id: AddTranslationUnits(Sdl.LanguagePlatform.TranslationMemory.TranslationUnit[],Sdl.LanguagePlatform.TranslationMemory.ImportSettings)
@@ -47,34 +38,37 @@ items:
   nameWithType: IImportDestination.AddTranslationUnits(TranslationUnit[], ImportSettings)
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnits(Sdl.LanguagePlatform.TranslationMemory.TranslationUnit[], Sdl.LanguagePlatform.TranslationMemory.ImportSettings)
   type: Method
-  source:
-    path: Sdl.Core.TM.ImportExport
-    isExternal: true
   assemblies:
   - Sdl.Core.TM.ImportExport
   namespace: Sdl.Core.TM.ImportExport
-  summary: "\nReplaced by AddTranslationUnitsMask\n"
+  summary: Replaced by AddTranslationUnitsMask
+  example: []
   syntax:
     content: >-
-      [Obsolete]
+      [Obsolete("Use IImportDestinationAsync")]
 
       ImportResult[] AddTranslationUnits(TranslationUnit[] tus, ImportSettings settings)
     parameters:
     - id: tus
       type: Sdl.LanguagePlatform.TranslationMemory.TranslationUnit[]
+      description: ''
     - id: settings
       type: Sdl.LanguagePlatform.TranslationMemory.ImportSettings
+      description: ''
     return:
       type: Sdl.LanguagePlatform.TranslationMemory.ImportResult[]
+      description: ''
     content.vb: >-
-      <Obsolete>
+      <Obsolete("Use IImportDestinationAsync")>
 
       Function AddTranslationUnits(tus As TranslationUnit(), settings As ImportSettings) As ImportResult()
   overload: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnits*
   attributes:
   - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor
-    arguments: []
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use IImportDestinationAsync
   nameWithType.vb: IImportDestination.AddTranslationUnits(TranslationUnit(), ImportSettings)
   fullName.vb: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnits(Sdl.LanguagePlatform.TranslationMemory.TranslationUnit(), Sdl.LanguagePlatform.TranslationMemory.ImportSettings)
   name.vb: AddTranslationUnits(TranslationUnit(), ImportSettings)
@@ -85,18 +79,18 @@ items:
   langs:
   - csharp
   - vb
-  name: AddTranslationUnitsMask(TranslationUnit[], ImportSettings, Boolean[])
-  nameWithType: IImportDestination.AddTranslationUnitsMask(TranslationUnit[], ImportSettings, Boolean[])
-  fullName: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnitsMask(Sdl.LanguagePlatform.TranslationMemory.TranslationUnit[], Sdl.LanguagePlatform.TranslationMemory.ImportSettings, System.Boolean[])
+  name: AddTranslationUnitsMask(TranslationUnit[], ImportSettings, bool[])
+  nameWithType: IImportDestination.AddTranslationUnitsMask(TranslationUnit[], ImportSettings, bool[])
+  fullName: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnitsMask(Sdl.LanguagePlatform.TranslationMemory.TranslationUnit[], Sdl.LanguagePlatform.TranslationMemory.ImportSettings, bool[])
   type: Method
-  source:
-    path: Sdl.Core.TM.ImportExport
-    isExternal: true
   assemblies:
   - Sdl.Core.TM.ImportExport
   namespace: Sdl.Core.TM.ImportExport
   syntax:
-    content: ImportResult[] AddTranslationUnitsMask(TranslationUnit[] tus, ImportSettings settings, bool[] mask)
+    content: >-
+      [Obsolete("Use IImportDestinationAsync")]
+
+      ImportResult[] AddTranslationUnitsMask(TranslationUnit[] tus, ImportSettings settings, bool[] mask)
     parameters:
     - id: tus
       type: Sdl.LanguagePlatform.TranslationMemory.TranslationUnit[]
@@ -106,10 +100,19 @@ items:
       type: System.Boolean[]
     return:
       type: Sdl.LanguagePlatform.TranslationMemory.ImportResult[]
-    content.vb: Function AddTranslationUnitsMask(tus As TranslationUnit(), settings As ImportSettings, mask As Boolean()) As ImportResult()
+    content.vb: >-
+      <Obsolete("Use IImportDestinationAsync")>
+
+      Function AddTranslationUnitsMask(tus As TranslationUnit(), settings As ImportSettings, mask As Boolean()) As ImportResult()
   overload: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnitsMask*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use IImportDestinationAsync
   nameWithType.vb: IImportDestination.AddTranslationUnitsMask(TranslationUnit(), ImportSettings, Boolean())
-  fullName.vb: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnitsMask(Sdl.LanguagePlatform.TranslationMemory.TranslationUnit(), Sdl.LanguagePlatform.TranslationMemory.ImportSettings, System.Boolean())
+  fullName.vb: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnitsMask(Sdl.LanguagePlatform.TranslationMemory.TranslationUnit(), Sdl.LanguagePlatform.TranslationMemory.ImportSettings, Boolean())
   name.vb: AddTranslationUnitsMask(TranslationUnit(), ImportSettings, Boolean())
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.UpdateFieldDefinitions(Sdl.LanguagePlatform.TranslationMemory.FieldDefinitions)
   commentId: M:Sdl.Core.TM.ImportExport.IImportDestination.UpdateFieldDefinitions(Sdl.LanguagePlatform.TranslationMemory.FieldDefinitions)
@@ -122,21 +125,31 @@ items:
   nameWithType: IImportDestination.UpdateFieldDefinitions(FieldDefinitions)
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.UpdateFieldDefinitions(Sdl.LanguagePlatform.TranslationMemory.FieldDefinitions)
   type: Method
-  source:
-    path: Sdl.Core.TM.ImportExport
-    isExternal: true
   assemblies:
   - Sdl.Core.TM.ImportExport
   namespace: Sdl.Core.TM.ImportExport
-  summary: "\n\n"
+  summary: ''
+  example: []
   syntax:
-    content: void UpdateFieldDefinitions(FieldDefinitions mergedFieldDefinitions)
+    content: >-
+      [Obsolete("Use IImportDestinationAsync")]
+
+      void UpdateFieldDefinitions(FieldDefinitions mergedFieldDefinitions)
     parameters:
     - id: mergedFieldDefinitions
       type: Sdl.LanguagePlatform.TranslationMemory.FieldDefinitions
       description: Fields that either 1. were only defined in the incoming data or 2. were defined in incoming data and destination data, but with additional picklist values in the incoming data (field contains a merge of both)
-    content.vb: Sub UpdateFieldDefinitions(mergedFieldDefinitions As FieldDefinitions)
+    content.vb: >-
+      <Obsolete("Use IImportDestinationAsync")>
+
+      Sub UpdateFieldDefinitions(mergedFieldDefinitions As FieldDefinitions)
   overload: Sdl.Core.TM.ImportExport.IImportDestination.UpdateFieldDefinitions*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use IImportDestinationAsync
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.UpdateLanguageResources(System.Collections.Generic.List{Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource})
   commentId: M:Sdl.Core.TM.ImportExport.IImportDestination.UpdateLanguageResources(System.Collections.Generic.List{Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource})
   id: UpdateLanguageResources(System.Collections.Generic.List{Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource})
@@ -148,21 +161,31 @@ items:
   nameWithType: IImportDestination.UpdateLanguageResources(List<LanguageResource>)
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.UpdateLanguageResources(System.Collections.Generic.List<Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource>)
   type: Method
-  source:
-    path: Sdl.Core.TM.ImportExport
-    isExternal: true
   assemblies:
   - Sdl.Core.TM.ImportExport
   namespace: Sdl.Core.TM.ImportExport
-  summary: "\n\n"
+  summary: ''
+  example: []
   syntax:
-    content: void UpdateLanguageResources(List<LanguageResource> mergedLanguageResources)
+    content: >-
+      [Obsolete("Use IImportDestinationAsync")]
+
+      void UpdateLanguageResources(List<LanguageResource> mergedLanguageResources)
     parameters:
     - id: mergedLanguageResources
       type: System.Collections.Generic.List{Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource}
       description: Language resources that either 1. were only defined in the incoming data or 2. were defined in incoming and destination data, but with additional values in the incoming data (resource contains a merge of both)
-    content.vb: Sub UpdateLanguageResources(mergedLanguageResources As List(Of LanguageResource))
+    content.vb: >-
+      <Obsolete("Use IImportDestinationAsync")>
+
+      Sub UpdateLanguageResources(mergedLanguageResources As List(Of LanguageResource))
   overload: Sdl.Core.TM.ImportExport.IImportDestination.UpdateLanguageResources*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use IImportDestinationAsync
   nameWithType.vb: IImportDestination.UpdateLanguageResources(List(Of LanguageResource))
   fullName.vb: Sdl.Core.TM.ImportExport.IImportDestination.UpdateLanguageResources(System.Collections.Generic.List(Of Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource))
   name.vb: UpdateLanguageResources(List(Of LanguageResource))
@@ -177,23 +200,16 @@ items:
   nameWithType: IImportDestination.SourceLanguage
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.SourceLanguage
   type: Property
-  source:
-    path: Sdl.Core.TM.ImportExport
-    isExternal: true
   assemblies:
   - Sdl.Core.TM.ImportExport
   namespace: Sdl.Core.TM.ImportExport
   syntax:
-    content: CultureInfo SourceLanguage { get; }
+    content: CultureCode SourceLanguage { get; }
     parameters: []
     return:
-      type: System.Globalization.CultureInfo
-    content.vb: ReadOnly Property SourceLanguage As CultureInfo
+      type: Sdl.Core.Globalization.CultureCode
+    content.vb: ReadOnly Property SourceLanguage As CultureCode
   overload: Sdl.Core.TM.ImportExport.IImportDestination.SourceLanguage*
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.TargetLanguage
   commentId: P:Sdl.Core.TM.ImportExport.IImportDestination.TargetLanguage
   id: TargetLanguage
@@ -205,23 +221,16 @@ items:
   nameWithType: IImportDestination.TargetLanguage
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.TargetLanguage
   type: Property
-  source:
-    path: Sdl.Core.TM.ImportExport
-    isExternal: true
   assemblies:
   - Sdl.Core.TM.ImportExport
   namespace: Sdl.Core.TM.ImportExport
   syntax:
-    content: CultureInfo TargetLanguage { get; }
+    content: CultureCode TargetLanguage { get; }
     parameters: []
     return:
-      type: System.Globalization.CultureInfo
-    content.vb: ReadOnly Property TargetLanguage As CultureInfo
+      type: Sdl.Core.Globalization.CultureCode
+    content.vb: ReadOnly Property TargetLanguage As CultureCode
   overload: Sdl.Core.TM.ImportExport.IImportDestination.TargetLanguage*
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.FieldDefinitions
   commentId: P:Sdl.Core.TM.ImportExport.IImportDestination.FieldDefinitions
   id: FieldDefinitions
@@ -233,9 +242,6 @@ items:
   nameWithType: IImportDestination.FieldDefinitions
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.FieldDefinitions
   type: Property
-  source:
-    path: Sdl.Core.TM.ImportExport
-    isExternal: true
   assemblies:
   - Sdl.Core.TM.ImportExport
   namespace: Sdl.Core.TM.ImportExport
@@ -246,10 +252,6 @@ items:
       type: Sdl.LanguagePlatform.TranslationMemory.FieldDefinitions
     content.vb: ReadOnly Property FieldDefinitions As FieldDefinitions
   overload: Sdl.Core.TM.ImportExport.IImportDestination.FieldDefinitions*
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.UsesLegacyHashes
   commentId: P:Sdl.Core.TM.ImportExport.IImportDestination.UsesLegacyHashes
   id: UsesLegacyHashes
@@ -261,9 +263,6 @@ items:
   nameWithType: IImportDestination.UsesLegacyHashes
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.UsesLegacyHashes
   type: Property
-  source:
-    path: Sdl.Core.TM.ImportExport
-    isExternal: true
   assemblies:
   - Sdl.Core.TM.ImportExport
   namespace: Sdl.Core.TM.ImportExport
@@ -274,10 +273,6 @@ items:
       type: System.Boolean
     content.vb: ReadOnly Property UsesLegacyHashes As Boolean
   overload: Sdl.Core.TM.ImportExport.IImportDestination.UsesLegacyHashes*
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.LanguageResources
   commentId: P:Sdl.Core.TM.ImportExport.IImportDestination.LanguageResources
   id: LanguageResources
@@ -289,9 +284,6 @@ items:
   nameWithType: IImportDestination.LanguageResources
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.LanguageResources
   type: Property
-  source:
-    path: Sdl.Core.TM.ImportExport
-    isExternal: true
   assemblies:
   - Sdl.Core.TM.ImportExport
   namespace: Sdl.Core.TM.ImportExport
@@ -302,20 +294,58 @@ items:
       type: Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource[]
     content.vb: ReadOnly Property LanguageResources As LanguageResource()
   overload: Sdl.Core.TM.ImportExport.IImportDestination.LanguageResources*
-  modifiers.csharp:
-  - get
-  modifiers.vb:
-  - ReadOnly
 references:
 - uid: Sdl.Core.TM.ImportExport
   commentId: N:Sdl.Core.TM.ImportExport
   isExternal: true
+  href: Sdl.html
   name: Sdl.Core.TM.ImportExport
   nameWithType: Sdl.Core.TM.ImportExport
   fullName: Sdl.Core.TM.ImportExport
+  spec.csharp:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.Core
+    name: Core
+    isExternal: true
+    href: Sdl.Core.html
+  - name: .
+  - uid: Sdl.Core.TM
+    name: TM
+    isExternal: true
+    href: Sdl.Core.TM.html
+  - name: .
+  - uid: Sdl.Core.TM.ImportExport
+    name: ImportExport
+    isExternal: true
+    href: Sdl.Core.TM.ImportExport.html
+  spec.vb:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.Core
+    name: Core
+    isExternal: true
+    href: Sdl.Core.html
+  - name: .
+  - uid: Sdl.Core.TM
+    name: TM
+    isExternal: true
+    href: Sdl.Core.TM.html
+  - name: .
+  - uid: Sdl.Core.TM.ImportExport
+    name: ImportExport
+    isExternal: true
+    href: Sdl.Core.TM.ImportExport.html
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnits*
   commentId: Overload:Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnits
   isExternal: true
+  href: Sdl.Core.TM.ImportExport.IImportDestination.html#Sdl_Core_TM_ImportExport_IImportDestination_AddTranslationUnits_Sdl_LanguagePlatform_TranslationMemory_TranslationUnit___Sdl_LanguagePlatform_TranslationMemory_ImportSettings_
   name: AddTranslationUnits
   nameWithType: IImportDestination.AddTranslationUnits
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnits
@@ -330,25 +360,20 @@ references:
   spec.csharp:
   - uid: Sdl.LanguagePlatform.TranslationMemory.TranslationUnit
     name: TranslationUnit
-    nameWithType: TranslationUnit
-    fullName: Sdl.LanguagePlatform.TranslationMemory.TranslationUnit
     isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
+  - name: '['
+  - name: ']'
   spec.vb:
   - uid: Sdl.LanguagePlatform.TranslationMemory.TranslationUnit
     name: TranslationUnit
-    nameWithType: TranslationUnit
-    fullName: Sdl.LanguagePlatform.TranslationMemory.TranslationUnit
     isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
+  - name: (
+  - name: )
 - uid: Sdl.LanguagePlatform.TranslationMemory.ImportSettings
   commentId: T:Sdl.LanguagePlatform.TranslationMemory.ImportSettings
   parent: Sdl.LanguagePlatform.TranslationMemory
   isExternal: true
+  href: Sdl.LanguagePlatform.TranslationMemory.ImportSettings.html
   name: ImportSettings
   nameWithType: ImportSettings
   fullName: Sdl.LanguagePlatform.TranslationMemory.ImportSettings
@@ -363,62 +388,86 @@ references:
   spec.csharp:
   - uid: Sdl.LanguagePlatform.TranslationMemory.ImportResult
     name: ImportResult
-    nameWithType: ImportResult
-    fullName: Sdl.LanguagePlatform.TranslationMemory.ImportResult
     isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
+  - name: '['
+  - name: ']'
   spec.vb:
   - uid: Sdl.LanguagePlatform.TranslationMemory.ImportResult
     name: ImportResult
-    nameWithType: ImportResult
-    fullName: Sdl.LanguagePlatform.TranslationMemory.ImportResult
     isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
+  - name: (
+  - name: )
 - uid: Sdl.LanguagePlatform.TranslationMemory
   commentId: N:Sdl.LanguagePlatform.TranslationMemory
   isExternal: true
+  href: Sdl.html
   name: Sdl.LanguagePlatform.TranslationMemory
   nameWithType: Sdl.LanguagePlatform.TranslationMemory
   fullName: Sdl.LanguagePlatform.TranslationMemory
+  spec.csharp:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.LanguagePlatform
+    name: LanguagePlatform
+    isExternal: true
+    href: Sdl.LanguagePlatform.html
+  - name: .
+  - uid: Sdl.LanguagePlatform.TranslationMemory
+    name: TranslationMemory
+    isExternal: true
+    href: Sdl.LanguagePlatform.TranslationMemory.html
+  spec.vb:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.LanguagePlatform
+    name: LanguagePlatform
+    isExternal: true
+    href: Sdl.LanguagePlatform.html
+  - name: .
+  - uid: Sdl.LanguagePlatform.TranslationMemory
+    name: TranslationMemory
+    isExternal: true
+    href: Sdl.LanguagePlatform.TranslationMemory.html
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnitsMask*
   commentId: Overload:Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnitsMask
   isExternal: true
+  href: Sdl.Core.TM.ImportExport.IImportDestination.html#Sdl_Core_TM_ImportExport_IImportDestination_AddTranslationUnitsMask_Sdl_LanguagePlatform_TranslationMemory_TranslationUnit___Sdl_LanguagePlatform_TranslationMemory_ImportSettings_System_Boolean___
   name: AddTranslationUnitsMask
   nameWithType: IImportDestination.AddTranslationUnitsMask
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.AddTranslationUnitsMask
 - uid: System.Boolean[]
   isExternal: true
-  name: Boolean[]
-  nameWithType: Boolean[]
-  fullName: System.Boolean[]
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool[]
+  nameWithType: bool[]
+  fullName: bool[]
   nameWithType.vb: Boolean()
-  fullName.vb: System.Boolean()
+  fullName.vb: Boolean()
   name.vb: Boolean()
   spec.csharp:
   - uid: System.Boolean
-    name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
+    name: bool
     isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '['
+  - name: ']'
   spec.vb:
   - uid: System.Boolean
     name: Boolean
-    nameWithType: Boolean
-    fullName: System.Boolean
     isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: (
+  - name: )
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.UpdateFieldDefinitions*
   commentId: Overload:Sdl.Core.TM.ImportExport.IImportDestination.UpdateFieldDefinitions
   isExternal: true
+  href: Sdl.Core.TM.ImportExport.IImportDestination.html#Sdl_Core_TM_ImportExport_IImportDestination_UpdateFieldDefinitions_Sdl_LanguagePlatform_TranslationMemory_FieldDefinitions_
   name: UpdateFieldDefinitions
   nameWithType: IImportDestination.UpdateFieldDefinitions
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.UpdateFieldDefinitions
@@ -426,12 +475,14 @@ references:
   commentId: T:Sdl.LanguagePlatform.TranslationMemory.FieldDefinitions
   parent: Sdl.LanguagePlatform.TranslationMemory
   isExternal: true
+  href: Sdl.LanguagePlatform.TranslationMemory.FieldDefinitions.html
   name: FieldDefinitions
   nameWithType: FieldDefinitions
   fullName: Sdl.LanguagePlatform.TranslationMemory.FieldDefinitions
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.UpdateLanguageResources*
   commentId: Overload:Sdl.Core.TM.ImportExport.IImportDestination.UpdateLanguageResources
   isExternal: true
+  href: Sdl.Core.TM.ImportExport.IImportDestination.html#Sdl_Core_TM_ImportExport_IImportDestination_UpdateLanguageResources_System_Collections_Generic_List_Sdl_LanguagePlatform_TranslationMemoryImpl_LanguageResource__
   name: UpdateLanguageResources
   nameWithType: IImportDestination.UpdateLanguageResources
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.UpdateLanguageResources
@@ -439,6 +490,7 @@ references:
   commentId: T:System.Collections.Generic.List{Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource}
   parent: System.Collections.Generic
   definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   name: List<LanguageResource>
   nameWithType: List<LanguageResource>
   fullName: System.Collections.Generic.List<Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource>
@@ -448,40 +500,29 @@ references:
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-    nameWithType: <
-    fullName: <
   - uid: Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource
     name: LanguageResource
-    nameWithType: LanguageResource
-    fullName: Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource
     isExternal: true
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
   - uid: Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource
     name: LanguageResource
-    nameWithType: LanguageResource
-    fullName: Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource
     isExternal: true
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Collections.Generic.List`1
   commentId: T:System.Collections.Generic.List`1
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   name: List<T>
   nameWithType: List<T>
   fullName: System.Collections.Generic.List<T>
@@ -491,73 +532,120 @@ references:
   spec.csharp:
   - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
   - name: <
-    nameWithType: <
-    fullName: <
   - name: T
-    nameWithType: T
-    fullName: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: System.Collections.Generic.List`1
     name: List
-    nameWithType: List
-    fullName: System.Collections.Generic.List
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
   - name: T
-    nameWithType: T
-    fullName: T
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Collections.Generic
   commentId: N:System.Collections.Generic
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System.Collections.Generic
   nameWithType: System.Collections.Generic
   fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.SourceLanguage*
   commentId: Overload:Sdl.Core.TM.ImportExport.IImportDestination.SourceLanguage
   isExternal: true
+  href: Sdl.Core.TM.ImportExport.IImportDestination.html#Sdl_Core_TM_ImportExport_IImportDestination_SourceLanguage
   name: SourceLanguage
   nameWithType: IImportDestination.SourceLanguage
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.SourceLanguage
-- uid: System.Globalization.CultureInfo
-  commentId: T:System.Globalization.CultureInfo
-  parent: System.Globalization
+- uid: Sdl.Core.Globalization.CultureCode
+  commentId: T:Sdl.Core.Globalization.CultureCode
+  parent: Sdl.Core.Globalization
   isExternal: true
-  name: CultureInfo
-  nameWithType: CultureInfo
-  fullName: System.Globalization.CultureInfo
-- uid: System.Globalization
-  commentId: N:System.Globalization
+  name: CultureCode
+  nameWithType: CultureCode
+  fullName: Sdl.Core.Globalization.CultureCode
+- uid: Sdl.Core.Globalization
+  commentId: N:Sdl.Core.Globalization
   isExternal: true
-  name: System.Globalization
-  nameWithType: System.Globalization
-  fullName: System.Globalization
+  name: Sdl.Core.Globalization
+  nameWithType: Sdl.Core.Globalization
+  fullName: Sdl.Core.Globalization
+  spec.csharp:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+  - name: .
+  - uid: Sdl.Core
+    name: Core
+    isExternal: true
+  - name: .
+  - uid: Sdl.Core.Globalization
+    name: Globalization
+    isExternal: true
+  spec.vb:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+  - name: .
+  - uid: Sdl.Core
+    name: Core
+    isExternal: true
+  - name: .
+  - uid: Sdl.Core.Globalization
+    name: Globalization
+    isExternal: true
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.TargetLanguage*
   commentId: Overload:Sdl.Core.TM.ImportExport.IImportDestination.TargetLanguage
   isExternal: true
+  href: Sdl.Core.TM.ImportExport.IImportDestination.html#Sdl_Core_TM_ImportExport_IImportDestination_TargetLanguage
   name: TargetLanguage
   nameWithType: IImportDestination.TargetLanguage
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.TargetLanguage
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.FieldDefinitions*
   commentId: Overload:Sdl.Core.TM.ImportExport.IImportDestination.FieldDefinitions
   isExternal: true
+  href: Sdl.Core.TM.ImportExport.IImportDestination.html#Sdl_Core_TM_ImportExport_IImportDestination_FieldDefinitions
   name: FieldDefinitions
   nameWithType: IImportDestination.FieldDefinitions
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.FieldDefinitions
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.UsesLegacyHashes*
   commentId: Overload:Sdl.Core.TM.ImportExport.IImportDestination.UsesLegacyHashes
   isExternal: true
+  href: Sdl.Core.TM.ImportExport.IImportDestination.html#Sdl_Core_TM_ImportExport_IImportDestination_UsesLegacyHashes
   name: UsesLegacyHashes
   nameWithType: IImportDestination.UsesLegacyHashes
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.UsesLegacyHashes
@@ -565,18 +653,24 @@ references:
   commentId: T:System.Boolean
   parent: System
   isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
 - uid: Sdl.Core.TM.ImportExport.IImportDestination.LanguageResources*
   commentId: Overload:Sdl.Core.TM.ImportExport.IImportDestination.LanguageResources
   isExternal: true
+  href: Sdl.Core.TM.ImportExport.IImportDestination.html#Sdl_Core_TM_ImportExport_IImportDestination_LanguageResources
   name: LanguageResources
   nameWithType: IImportDestination.LanguageResources
   fullName: Sdl.Core.TM.ImportExport.IImportDestination.LanguageResources
@@ -591,18 +685,12 @@ references:
   spec.csharp:
   - uid: Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource
     name: LanguageResource
-    nameWithType: LanguageResource
-    fullName: Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource
     isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
+  - name: '['
+  - name: ']'
   spec.vb:
   - uid: Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource
     name: LanguageResource
-    nameWithType: LanguageResource
-    fullName: Sdl.LanguagePlatform.TranslationMemoryImpl.LanguageResource
     isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
+  - name: (
+  - name: )

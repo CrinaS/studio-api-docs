@@ -18,22 +18,17 @@ items:
   - Sdl.LanguagePlatform.Core.Tokenization.MeasureToken
   - Sdl.LanguagePlatform.Core.Tokenization.NumberToken
   - Sdl.LanguagePlatform.Core.Tokenization.NumericSeparator
-  - Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnit
-  - Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnitDescription
-  - Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnitDescriptions
   - Sdl.LanguagePlatform.Core.Tokenization.PrioritizedToken
   - Sdl.LanguagePlatform.Core.Tokenization.Sign
   - Sdl.LanguagePlatform.Core.Tokenization.SimpleToken
   - Sdl.LanguagePlatform.Core.Tokenization.TagToken
   - Sdl.LanguagePlatform.Core.Tokenization.Token
   - Sdl.LanguagePlatform.Core.Tokenization.TokenBundle
+  - Sdl.LanguagePlatform.Core.Tokenization.TokenType
   - Sdl.LanguagePlatform.Core.Tokenization.TokenizationContext
   - Sdl.LanguagePlatform.Core.Tokenization.TokenizerFlags
-  - Sdl.LanguagePlatform.Core.Tokenization.TokenType
   - Sdl.LanguagePlatform.Core.Tokenization.Unit
   - Sdl.LanguagePlatform.Core.Tokenization.UnitSeparationMode
-  - Sdl.LanguagePlatform.Core.Tokenization.UnitSystem
-  - Sdl.LanguagePlatform.Core.Tokenization.UnitType
   langs:
   - csharp
   - vb
@@ -48,6 +43,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.LocalizationParametersSource
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.LocalizationParametersSource.html
   name: LocalizationParametersSource
   nameWithType: LocalizationParametersSource
   fullName: Sdl.LanguagePlatform.Core.Tokenization.LocalizationParametersSource
@@ -55,6 +51,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.UnitSeparationMode
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.UnitSeparationMode.html
   name: UnitSeparationMode
   nameWithType: UnitSeparationMode
   fullName: Sdl.LanguagePlatform.Core.Tokenization.UnitSeparationMode
@@ -62,6 +59,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.AutoLocalizationSettings
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.AutoLocalizationSettings.html
   name: AutoLocalizationSettings
   nameWithType: AutoLocalizationSettings
   fullName: Sdl.LanguagePlatform.Core.Tokenization.AutoLocalizationSettings
@@ -69,6 +67,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.BuiltinRecognizers
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.BuiltinRecognizers.html
   name: BuiltinRecognizers
   nameWithType: BuiltinRecognizers
   fullName: Sdl.LanguagePlatform.Core.Tokenization.BuiltinRecognizers
@@ -76,12 +75,14 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.CurrencySymbolPosition
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.CurrencySymbolPosition.html
   name: CurrencySymbolPosition
   nameWithType: CurrencySymbolPosition
   fullName: Sdl.LanguagePlatform.Core.Tokenization.CurrencySymbolPosition
 - uid: Sdl.LanguagePlatform.Core.Tokenization.CurrencyFormat
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.CurrencyFormat
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.CurrencyFormat.html
   name: CurrencyFormat
   nameWithType: CurrencyFormat
   fullName: Sdl.LanguagePlatform.Core.Tokenization.CurrencyFormat
@@ -89,6 +90,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.DateTimePatternType
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.DateTimePatternType.html
   name: DateTimePatternType
   nameWithType: DateTimePatternType
   fullName: Sdl.LanguagePlatform.Core.Tokenization.DateTimePatternType
@@ -96,6 +98,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.DateTimeToken
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.DateTimeToken.html
   name: DateTimeToken
   nameWithType: DateTimeToken
   fullName: Sdl.LanguagePlatform.Core.Tokenization.DateTimeToken
@@ -103,6 +106,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.GenericPlaceableToken
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.GenericPlaceableToken.html
   name: GenericPlaceableToken
   nameWithType: GenericPlaceableToken
   fullName: Sdl.LanguagePlatform.Core.Tokenization.GenericPlaceableToken
@@ -110,18 +114,21 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.ILocalizableToken
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.ILocalizableToken.html
   name: ILocalizableToken
   nameWithType: ILocalizableToken
   fullName: Sdl.LanguagePlatform.Core.Tokenization.ILocalizableToken
 - uid: Sdl.LanguagePlatform.Core.Tokenization.Match
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.Match
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.Match.html
   name: Match
   nameWithType: Match
   fullName: Sdl.LanguagePlatform.Core.Tokenization.Match
 - uid: Sdl.LanguagePlatform.Core.Tokenization.CustomUnitDefinition
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.CustomUnitDefinition
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.CustomUnitDefinition.html
   name: CustomUnitDefinition
   nameWithType: CustomUnitDefinition
   fullName: Sdl.LanguagePlatform.Core.Tokenization.CustomUnitDefinition
@@ -129,6 +136,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.MeasureToken
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.MeasureToken.html
   name: MeasureToken
   nameWithType: MeasureToken
   fullName: Sdl.LanguagePlatform.Core.Tokenization.MeasureToken
@@ -136,6 +144,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.NumericSeparator
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.NumericSeparator.html
   name: NumericSeparator
   nameWithType: NumericSeparator
   fullName: Sdl.LanguagePlatform.Core.Tokenization.NumericSeparator
@@ -143,6 +152,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.Sign
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.Sign.html
   name: Sign
   nameWithType: Sign
   fullName: Sdl.LanguagePlatform.Core.Tokenization.Sign
@@ -150,47 +160,15 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.NumberToken
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.NumberToken.html
   name: NumberToken
   nameWithType: NumberToken
   fullName: Sdl.LanguagePlatform.Core.Tokenization.NumberToken
-- uid: Sdl.LanguagePlatform.Core.Tokenization.UnitType
-  commentId: T:Sdl.LanguagePlatform.Core.Tokenization.UnitType
-  parent: Sdl.LanguagePlatform.Core.Tokenization
-  isExternal: true
-  name: UnitType
-  nameWithType: UnitType
-  fullName: Sdl.LanguagePlatform.Core.Tokenization.UnitType
-- uid: Sdl.LanguagePlatform.Core.Tokenization.UnitSystem
-  commentId: T:Sdl.LanguagePlatform.Core.Tokenization.UnitSystem
-  parent: Sdl.LanguagePlatform.Core.Tokenization
-  isExternal: true
-  name: UnitSystem
-  nameWithType: UnitSystem
-  fullName: Sdl.LanguagePlatform.Core.Tokenization.UnitSystem
-- uid: Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnit
-  commentId: T:Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnit
-  isExternal: true
-  name: PhysicalUnit
-  nameWithType: PhysicalUnit
-  fullName: Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnit
-- uid: Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnitDescription
-  commentId: T:Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnitDescription
-  parent: Sdl.LanguagePlatform.Core.Tokenization
-  isExternal: true
-  name: PhysicalUnitDescription
-  nameWithType: PhysicalUnitDescription
-  fullName: Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnitDescription
-- uid: Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnitDescriptions
-  commentId: T:Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnitDescriptions
-  parent: Sdl.LanguagePlatform.Core.Tokenization
-  isExternal: true
-  name: PhysicalUnitDescriptions
-  nameWithType: PhysicalUnitDescriptions
-  fullName: Sdl.LanguagePlatform.Core.Tokenization.PhysicalUnitDescriptions
 - uid: Sdl.LanguagePlatform.Core.Tokenization.SimpleToken
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.SimpleToken
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.SimpleToken.html
   name: SimpleToken
   nameWithType: SimpleToken
   fullName: Sdl.LanguagePlatform.Core.Tokenization.SimpleToken
@@ -198,6 +176,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.TagToken
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.TagToken.html
   name: TagToken
   nameWithType: TagToken
   fullName: Sdl.LanguagePlatform.Core.Tokenization.TagToken
@@ -205,6 +184,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.Token
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.Token.html
   name: Token
   nameWithType: Token
   fullName: Sdl.LanguagePlatform.Core.Tokenization.Token
@@ -212,12 +192,14 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.PrioritizedToken
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.PrioritizedToken.html
   name: PrioritizedToken
   nameWithType: PrioritizedToken
   fullName: Sdl.LanguagePlatform.Core.Tokenization.PrioritizedToken
 - uid: Sdl.LanguagePlatform.Core.Tokenization.TokenBundle
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.TokenBundle
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.TokenBundle.html
   name: TokenBundle
   nameWithType: TokenBundle
   fullName: Sdl.LanguagePlatform.Core.Tokenization.TokenBundle
@@ -225,6 +207,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.TokenizationContext
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.TokenizationContext.html
   name: TokenizationContext
   nameWithType: TokenizationContext
   fullName: Sdl.LanguagePlatform.Core.Tokenization.TokenizationContext
@@ -232,6 +215,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.TokenizerFlags
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.TokenizerFlags.html
   name: TokenizerFlags
   nameWithType: TokenizerFlags
   fullName: Sdl.LanguagePlatform.Core.Tokenization.TokenizerFlags
@@ -239,6 +223,7 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.TokenType
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.TokenType.html
   name: TokenType
   nameWithType: TokenType
   fullName: Sdl.LanguagePlatform.Core.Tokenization.TokenType
@@ -246,12 +231,54 @@ references:
   commentId: T:Sdl.LanguagePlatform.Core.Tokenization.Unit
   parent: Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.LanguagePlatform.Core.Tokenization.Unit.html
   name: Unit
   nameWithType: Unit
   fullName: Sdl.LanguagePlatform.Core.Tokenization.Unit
 - uid: Sdl.LanguagePlatform.Core.Tokenization
   commentId: N:Sdl.LanguagePlatform.Core.Tokenization
   isExternal: true
+  href: Sdl.html
   name: Sdl.LanguagePlatform.Core.Tokenization
   nameWithType: Sdl.LanguagePlatform.Core.Tokenization
   fullName: Sdl.LanguagePlatform.Core.Tokenization
+  spec.csharp:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.LanguagePlatform
+    name: LanguagePlatform
+    isExternal: true
+    href: Sdl.LanguagePlatform.html
+  - name: .
+  - uid: Sdl.LanguagePlatform.Core
+    name: Core
+    isExternal: true
+    href: Sdl.LanguagePlatform.Core.html
+  - name: .
+  - uid: Sdl.LanguagePlatform.Core.Tokenization
+    name: Tokenization
+    isExternal: true
+    href: Sdl.LanguagePlatform.Core.Tokenization.html
+  spec.vb:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.LanguagePlatform
+    name: LanguagePlatform
+    isExternal: true
+    href: Sdl.LanguagePlatform.html
+  - name: .
+  - uid: Sdl.LanguagePlatform.Core
+    name: Core
+    isExternal: true
+    href: Sdl.LanguagePlatform.Core.html
+  - name: .
+  - uid: Sdl.LanguagePlatform.Core.Tokenization
+    name: Tokenization
+    isExternal: true
+    href: Sdl.LanguagePlatform.Core.Tokenization.html

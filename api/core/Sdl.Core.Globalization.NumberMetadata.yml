@@ -9,8 +9,8 @@ items:
   - Sdl.Core.Globalization.NumberMetadata.NumberGrammarRangeSet
   - Sdl.Core.Globalization.NumberMetadata.NumberMetadata
   - Sdl.Core.Globalization.NumberMetadata.NumberMetadataApi
+  - Sdl.Core.Globalization.NumberMetadata.NumberMetadataException
   - Sdl.Core.Globalization.NumberMetadata.NumberMetadataRegistry
-  - Sdl.Core.Globalization.NumberMetadata.NumberMetadataRegistryException
   - Sdl.Core.Globalization.NumberMetadata.RangeOperator
   - Sdl.Core.Globalization.NumberMetadata.RangeTransform
   langs:
@@ -21,31 +21,34 @@ items:
   fullName: Sdl.Core.Globalization.NumberMetadata
   type: Namespace
   assemblies:
-  - Sdl.Core.Globalization
+  - Sdl.Core.Globalization.Async
 references:
-- uid: Sdl.Core.Globalization.NumberMetadata.NumberMetadataRegistryException
-  commentId: T:Sdl.Core.Globalization.NumberMetadata.NumberMetadataRegistryException
+- uid: Sdl.Core.Globalization.NumberMetadata.NumberMetadataException
+  commentId: T:Sdl.Core.Globalization.NumberMetadata.NumberMetadataException
   isExternal: true
-  name: NumberMetadataRegistryException
-  nameWithType: NumberMetadataRegistryException
-  fullName: Sdl.Core.Globalization.NumberMetadata.NumberMetadataRegistryException
+  href: Sdl.Core.Globalization.NumberMetadata.NumberMetadataException.html
+  name: NumberMetadataException
+  nameWithType: NumberMetadataException
+  fullName: Sdl.Core.Globalization.NumberMetadata.NumberMetadataException
 - uid: Sdl.Core.Globalization.NumberMetadata.NumberMetadataRegistry
   commentId: T:Sdl.Core.Globalization.NumberMetadata.NumberMetadataRegistry
   parent: Sdl.Core.Globalization.NumberMetadata
   isExternal: true
+  href: Sdl.Core.Globalization.NumberMetadata.NumberMetadataRegistry.html
   name: NumberMetadataRegistry
   nameWithType: NumberMetadataRegistry
   fullName: Sdl.Core.Globalization.NumberMetadata.NumberMetadataRegistry
 - uid: Sdl.Core.Globalization.NumberMetadata.NumberMetadata
   commentId: T:Sdl.Core.Globalization.NumberMetadata.NumberMetadata
-  parent: Sdl.Core.Globalization.NumberMetadata
   isExternal: true
+  href: Sdl.Core.Globalization.NumberMetadata.NumberMetadata.html
   name: NumberMetadata
   nameWithType: NumberMetadata
   fullName: Sdl.Core.Globalization.NumberMetadata.NumberMetadata
 - uid: Sdl.Core.Globalization.NumberMetadata.NumberGrammarRangeSet
   commentId: T:Sdl.Core.Globalization.NumberMetadata.NumberGrammarRangeSet
   isExternal: true
+  href: Sdl.Core.Globalization.NumberMetadata.NumberGrammarRangeSet.html
   name: NumberGrammarRangeSet
   nameWithType: NumberGrammarRangeSet
   fullName: Sdl.Core.Globalization.NumberMetadata.NumberGrammarRangeSet
@@ -53,24 +56,28 @@ references:
   commentId: T:Sdl.Core.Globalization.NumberMetadata.RangeOperator
   parent: Sdl.Core.Globalization.NumberMetadata
   isExternal: true
+  href: Sdl.Core.Globalization.NumberMetadata.RangeOperator.html
   name: RangeOperator
   nameWithType: RangeOperator
   fullName: Sdl.Core.Globalization.NumberMetadata.RangeOperator
 - uid: Sdl.Core.Globalization.NumberMetadata.RangeTransform
   commentId: T:Sdl.Core.Globalization.NumberMetadata.RangeTransform
   isExternal: true
+  href: Sdl.Core.Globalization.NumberMetadata.RangeTransform.html
   name: RangeTransform
   nameWithType: RangeTransform
   fullName: Sdl.Core.Globalization.NumberMetadata.RangeTransform
 - uid: Sdl.Core.Globalization.NumberMetadata.IntNumberGrammarRange
   commentId: T:Sdl.Core.Globalization.NumberMetadata.IntNumberGrammarRange
   isExternal: true
+  href: Sdl.Core.Globalization.NumberMetadata.IntNumberGrammarRange.html
   name: IntNumberGrammarRange
   nameWithType: IntNumberGrammarRange
   fullName: Sdl.Core.Globalization.NumberMetadata.IntNumberGrammarRange
 - uid: Sdl.Core.Globalization.NumberMetadata.DoubleNumberGrammarRange
   commentId: T:Sdl.Core.Globalization.NumberMetadata.DoubleNumberGrammarRange
   isExternal: true
+  href: Sdl.Core.Globalization.NumberMetadata.DoubleNumberGrammarRange.html
   name: DoubleNumberGrammarRange
   nameWithType: DoubleNumberGrammarRange
   fullName: Sdl.Core.Globalization.NumberMetadata.DoubleNumberGrammarRange
@@ -78,12 +85,54 @@ references:
   commentId: T:Sdl.Core.Globalization.NumberMetadata.NumberMetadataApi
   parent: Sdl.Core.Globalization.NumberMetadata
   isExternal: true
+  href: Sdl.Core.Globalization.NumberMetadata.NumberMetadataApi.html
   name: NumberMetadataApi
   nameWithType: NumberMetadataApi
   fullName: Sdl.Core.Globalization.NumberMetadata.NumberMetadataApi
 - uid: Sdl.Core.Globalization.NumberMetadata
   commentId: N:Sdl.Core.Globalization.NumberMetadata
   isExternal: true
+  href: Sdl.html
   name: Sdl.Core.Globalization.NumberMetadata
   nameWithType: Sdl.Core.Globalization.NumberMetadata
   fullName: Sdl.Core.Globalization.NumberMetadata
+  spec.csharp:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.Core
+    name: Core
+    isExternal: true
+    href: Sdl.Core.html
+  - name: .
+  - uid: Sdl.Core.Globalization
+    name: Globalization
+    isExternal: true
+    href: Sdl.Core.Globalization.html
+  - name: .
+  - uid: Sdl.Core.Globalization.NumberMetadata
+    name: NumberMetadata
+    isExternal: true
+    href: Sdl.Core.Globalization.NumberMetadata.html
+  spec.vb:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.Core
+    name: Core
+    isExternal: true
+    href: Sdl.Core.html
+  - name: .
+  - uid: Sdl.Core.Globalization
+    name: Globalization
+    isExternal: true
+    href: Sdl.Core.Globalization.html
+  - name: .
+  - uid: Sdl.Core.Globalization.NumberMetadata
+    name: NumberMetadata
+    isExternal: true
+    href: Sdl.Core.Globalization.NumberMetadata.html

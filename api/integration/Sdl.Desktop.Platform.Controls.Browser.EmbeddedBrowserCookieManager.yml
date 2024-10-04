@@ -1,0 +1,757 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager
+  commentId: T:Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager
+  id: EmbeddedBrowserCookieManager
+  parent: Sdl.Desktop.Platform.Controls.Browser
+  children:
+  - Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.#ctor(Microsoft.Extensions.Logging.ILogger{Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager},Sdl.Desktop.Platform.Controls.Browser.INativeBrowserApi)
+  - Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.ClearCookiesFor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: EmbeddedBrowserCookieManager
+  nameWithType: EmbeddedBrowserCookieManager
+  fullName: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager
+  type: Class
+  assemblies:
+  - Sdl.Desktop.Platform.Controls
+  namespace: Sdl.Desktop.Platform.Controls.Browser
+  syntax:
+    content: >-
+      [Obsolete("Use WebView2 instead of WebBrowser and its own CookieManager.")]
+
+      public class EmbeddedBrowserCookieManager : ICookieManager
+    content.vb: >-
+      <Obsolete("Use WebView2 instead of WebBrowser and its own CookieManager.")>
+
+      Public Class EmbeddedBrowserCookieManager Implements ICookieManager
+  inheritance:
+  - System.Object
+  implements:
+  - Sdl.Desktop.Platform.Controls.Browser.ICookieManager
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(System.Action{System.Windows.Window})
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use WebView2 instead of WebBrowser and its own CookieManager.
+- uid: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.#ctor(Microsoft.Extensions.Logging.ILogger{Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager},Sdl.Desktop.Platform.Controls.Browser.INativeBrowserApi)
+  commentId: M:Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.#ctor(Microsoft.Extensions.Logging.ILogger{Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager},Sdl.Desktop.Platform.Controls.Browser.INativeBrowserApi)
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager},Sdl.Desktop.Platform.Controls.Browser.INativeBrowserApi)'
+  parent: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager
+  langs:
+  - csharp
+  - vb
+  name: EmbeddedBrowserCookieManager(ILogger<EmbeddedBrowserCookieManager>, INativeBrowserApi)
+  nameWithType: EmbeddedBrowserCookieManager.EmbeddedBrowserCookieManager(ILogger<EmbeddedBrowserCookieManager>, INativeBrowserApi)
+  fullName: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.EmbeddedBrowserCookieManager(Microsoft.Extensions.Logging.ILogger<Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager>, Sdl.Desktop.Platform.Controls.Browser.INativeBrowserApi)
+  type: Constructor
+  assemblies:
+  - Sdl.Desktop.Platform.Controls
+  namespace: Sdl.Desktop.Platform.Controls.Browser
+  syntax:
+    content: public EmbeddedBrowserCookieManager(ILogger<EmbeddedBrowserCookieManager> logger, INativeBrowserApi browserApi)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager}
+    - id: browserApi
+      type: Sdl.Desktop.Platform.Controls.Browser.INativeBrowserApi
+    content.vb: Public Sub New(logger As ILogger(Of EmbeddedBrowserCookieManager), browserApi As INativeBrowserApi)
+  overload: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.#ctor*
+  nameWithType.vb: EmbeddedBrowserCookieManager.New(ILogger(Of EmbeddedBrowserCookieManager), INativeBrowserApi)
+  fullName.vb: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.New(Microsoft.Extensions.Logging.ILogger(Of Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager), Sdl.Desktop.Platform.Controls.Browser.INativeBrowserApi)
+  name.vb: New(ILogger(Of EmbeddedBrowserCookieManager), INativeBrowserApi)
+- uid: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.ClearCookiesFor(System.String)
+  commentId: M:Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.ClearCookiesFor(System.String)
+  id: ClearCookiesFor(System.String)
+  parent: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager
+  langs:
+  - csharp
+  - vb
+  name: ClearCookiesFor(string)
+  nameWithType: EmbeddedBrowserCookieManager.ClearCookiesFor(string)
+  fullName: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.ClearCookiesFor(string)
+  type: Method
+  assemblies:
+  - Sdl.Desktop.Platform.Controls
+  namespace: Sdl.Desktop.Platform.Controls.Browser
+  summary: Clears all cookies (including HttpOnly) placed in Path=/ for the specified URL.
+  example: []
+  syntax:
+    content: public void ClearCookiesFor(string url)
+    parameters:
+    - id: url
+      type: System.String
+      description: URL to clear cookies for
+    content.vb: Public Sub ClearCookiesFor(url As String)
+  overload: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.ClearCookiesFor*
+  implements:
+  - Sdl.Desktop.Platform.Controls.Browser.ICookieManager.ClearCookiesFor(System.String)
+  nameWithType.vb: EmbeddedBrowserCookieManager.ClearCookiesFor(String)
+  fullName.vb: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.ClearCookiesFor(String)
+  name.vb: ClearCookiesFor(String)
+references:
+- uid: Sdl.Desktop.Platform.Controls.Browser
+  commentId: N:Sdl.Desktop.Platform.Controls.Browser
+  isExternal: true
+  href: Sdl.html
+  name: Sdl.Desktop.Platform.Controls.Browser
+  nameWithType: Sdl.Desktop.Platform.Controls.Browser
+  fullName: Sdl.Desktop.Platform.Controls.Browser
+  spec.csharp:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.Desktop
+    name: Desktop
+    isExternal: true
+    href: Sdl.Desktop.html
+  - name: .
+  - uid: Sdl.Desktop.Platform
+    name: Platform
+    isExternal: true
+    href: Sdl.Desktop.Platform.html
+  - name: .
+  - uid: Sdl.Desktop.Platform.Controls
+    name: Controls
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.html
+  - name: .
+  - uid: Sdl.Desktop.Platform.Controls.Browser
+    name: Browser
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Browser.html
+  spec.vb:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.Desktop
+    name: Desktop
+    isExternal: true
+    href: Sdl.Desktop.html
+  - name: .
+  - uid: Sdl.Desktop.Platform
+    name: Platform
+    isExternal: true
+    href: Sdl.Desktop.Platform.html
+  - name: .
+  - uid: Sdl.Desktop.Platform.Controls
+    name: Controls
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.html
+  - name: .
+  - uid: Sdl.Desktop.Platform.Controls.Browser
+    name: Browser
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Browser.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Sdl.Desktop.Platform.Controls.Browser.ICookieManager
+  commentId: T:Sdl.Desktop.Platform.Controls.Browser.ICookieManager
+  parent: Sdl.Desktop.Platform.Controls.Browser
+  isExternal: true
+  href: Sdl.Desktop.Platform.Controls.Browser.ICookieManager.html
+  name: ICookieManager
+  nameWithType: ICookieManager
+  fullName: Sdl.Desktop.Platform.Controls.Browser.ICookieManager
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(System.Action{System.Windows.Window})
+  commentId: M:Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(System.Object,System.Action{System.Windows.Window})
+  parent: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils
+  definition: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(System.Object,System.Action{System.Windows.Window})
+  href: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.html#Sdl_Desktop_Platform_Controls_Controls_WindowsControlUtils_ForWindowFromFrameworkElement_System_Object_System_Action_System_Windows_Window__
+  name: ForWindowFromFrameworkElement(object, Action<Window>)
+  nameWithType: WindowsControlUtils.ForWindowFromFrameworkElement(object, Action<Window>)
+  fullName: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(object, System.Action<System.Windows.Window>)
+  nameWithType.vb: WindowsControlUtils.ForWindowFromFrameworkElement(Object, Action(Of Window))
+  fullName.vb: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(Object, System.Action(Of System.Windows.Window))
+  name.vb: ForWindowFromFrameworkElement(Object, Action(Of Window))
+  spec.csharp:
+  - uid: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(System.Object,System.Action{System.Windows.Window})
+    name: ForWindowFromFrameworkElement
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.html#Sdl_Desktop_Platform_Controls_Controls_WindowsControlUtils_ForWindowFromFrameworkElement_System_Object_System_Action_System_Windows_Window__
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(System.Object,System.Action{System.Windows.Window})
+    name: ForWindowFromFrameworkElement
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.html#Sdl_Desktop_Platform_Controls_Controls_WindowsControlUtils_ForWindowFromFrameworkElement_System_Object_System_Action_System_Windows_Window__
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(System.Object,System.Action{System.Windows.Window})
+  commentId: M:Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(System.Object,System.Action{System.Windows.Window})
+  isExternal: true
+  href: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.html#Sdl_Desktop_Platform_Controls_Controls_WindowsControlUtils_ForWindowFromFrameworkElement_System_Object_System_Action_System_Windows_Window__
+  name: ForWindowFromFrameworkElement(object, Action<Window>)
+  nameWithType: WindowsControlUtils.ForWindowFromFrameworkElement(object, Action<Window>)
+  fullName: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(object, System.Action<System.Windows.Window>)
+  nameWithType.vb: WindowsControlUtils.ForWindowFromFrameworkElement(Object, Action(Of Window))
+  fullName.vb: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(Object, System.Action(Of System.Windows.Window))
+  name.vb: ForWindowFromFrameworkElement(Object, Action(Of Window))
+  spec.csharp:
+  - uid: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(System.Object,System.Action{System.Windows.Window})
+    name: ForWindowFromFrameworkElement
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.html#Sdl_Desktop_Platform_Controls_Controls_WindowsControlUtils_ForWindowFromFrameworkElement_System_Object_System_Action_System_Windows_Window__
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.ForWindowFromFrameworkElement(System.Object,System.Action{System.Windows.Window})
+    name: ForWindowFromFrameworkElement
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.html#Sdl_Desktop_Platform_Controls_Controls_WindowsControlUtils_ForWindowFromFrameworkElement_System_Object_System_Action_System_Windows_Window__
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Windows.Window
+    name: Window
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  - name: )
+  - name: )
+- uid: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils
+  commentId: T:Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils
+  parent: Sdl.Desktop.Platform.Controls.Controls
+  isExternal: true
+  href: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils.html
+  name: WindowsControlUtils
+  nameWithType: WindowsControlUtils
+  fullName: Sdl.Desktop.Platform.Controls.Controls.WindowsControlUtils
+- uid: Sdl.Desktop.Platform.Controls.Controls
+  commentId: N:Sdl.Desktop.Platform.Controls.Controls
+  isExternal: true
+  href: Sdl.html
+  name: Sdl.Desktop.Platform.Controls.Controls
+  nameWithType: Sdl.Desktop.Platform.Controls.Controls
+  fullName: Sdl.Desktop.Platform.Controls.Controls
+  spec.csharp:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.Desktop
+    name: Desktop
+    isExternal: true
+    href: Sdl.Desktop.html
+  - name: .
+  - uid: Sdl.Desktop.Platform
+    name: Platform
+    isExternal: true
+    href: Sdl.Desktop.Platform.html
+  - name: .
+  - uid: Sdl.Desktop.Platform.Controls
+    name: Controls
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.html
+  - name: .
+  - uid: Sdl.Desktop.Platform.Controls.Controls
+    name: Controls
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Controls.html
+  spec.vb:
+  - uid: Sdl
+    name: Sdl
+    isExternal: true
+    href: Sdl.html
+  - name: .
+  - uid: Sdl.Desktop
+    name: Desktop
+    isExternal: true
+    href: Sdl.Desktop.html
+  - name: .
+  - uid: Sdl.Desktop.Platform
+    name: Platform
+    isExternal: true
+    href: Sdl.Desktop.Platform.html
+  - name: .
+  - uid: Sdl.Desktop.Platform.Controls
+    name: Controls
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.html
+  - name: .
+  - uid: Sdl.Desktop.Platform.Controls.Controls
+    name: Controls
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Controls.html
+- uid: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.#ctor*
+  commentId: Overload:Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.#ctor
+  isExternal: true
+  href: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.html#Sdl_Desktop_Platform_Controls_Browser_EmbeddedBrowserCookieManager__ctor_Microsoft_Extensions_Logging_ILogger_Sdl_Desktop_Platform_Controls_Browser_EmbeddedBrowserCookieManager__Sdl_Desktop_Platform_Controls_Browser_INativeBrowserApi_
+  name: EmbeddedBrowserCookieManager
+  nameWithType: EmbeddedBrowserCookieManager.EmbeddedBrowserCookieManager
+  fullName: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.EmbeddedBrowserCookieManager
+  nameWithType.vb: EmbeddedBrowserCookieManager.New
+  fullName.vb: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.ILogger{Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<EmbeddedBrowserCookieManager>
+  nameWithType: ILogger<EmbeddedBrowserCookieManager>
+  fullName: Microsoft.Extensions.Logging.ILogger<Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager>
+  nameWithType.vb: ILogger(Of EmbeddedBrowserCookieManager)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager)
+  name.vb: ILogger(Of EmbeddedBrowserCookieManager)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager
+    name: EmbeddedBrowserCookieManager
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager
+    name: EmbeddedBrowserCookieManager
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.html
+  - name: )
+- uid: Sdl.Desktop.Platform.Controls.Browser.INativeBrowserApi
+  commentId: T:Sdl.Desktop.Platform.Controls.Browser.INativeBrowserApi
+  parent: Sdl.Desktop.Platform.Controls.Browser
+  isExternal: true
+  href: Sdl.Desktop.Platform.Controls.Browser.INativeBrowserApi.html
+  name: INativeBrowserApi
+  nameWithType: INativeBrowserApi
+  fullName: Sdl.Desktop.Platform.Controls.Browser.INativeBrowserApi
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.ClearCookiesFor*
+  commentId: Overload:Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.ClearCookiesFor
+  isExternal: true
+  href: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.html#Sdl_Desktop_Platform_Controls_Browser_EmbeddedBrowserCookieManager_ClearCookiesFor_System_String_
+  name: ClearCookiesFor
+  nameWithType: EmbeddedBrowserCookieManager.ClearCookiesFor
+  fullName: Sdl.Desktop.Platform.Controls.Browser.EmbeddedBrowserCookieManager.ClearCookiesFor
+- uid: Sdl.Desktop.Platform.Controls.Browser.ICookieManager.ClearCookiesFor(System.String)
+  commentId: M:Sdl.Desktop.Platform.Controls.Browser.ICookieManager.ClearCookiesFor(System.String)
+  parent: Sdl.Desktop.Platform.Controls.Browser.ICookieManager
+  isExternal: true
+  href: Sdl.Desktop.Platform.Controls.Browser.ICookieManager.html#Sdl_Desktop_Platform_Controls_Browser_ICookieManager_ClearCookiesFor_System_String_
+  name: ClearCookiesFor(string)
+  nameWithType: ICookieManager.ClearCookiesFor(string)
+  fullName: Sdl.Desktop.Platform.Controls.Browser.ICookieManager.ClearCookiesFor(string)
+  nameWithType.vb: ICookieManager.ClearCookiesFor(String)
+  fullName.vb: Sdl.Desktop.Platform.Controls.Browser.ICookieManager.ClearCookiesFor(String)
+  name.vb: ClearCookiesFor(String)
+  spec.csharp:
+  - uid: Sdl.Desktop.Platform.Controls.Browser.ICookieManager.ClearCookiesFor(System.String)
+    name: ClearCookiesFor
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Browser.ICookieManager.html#Sdl_Desktop_Platform_Controls_Browser_ICookieManager_ClearCookiesFor_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Sdl.Desktop.Platform.Controls.Browser.ICookieManager.ClearCookiesFor(System.String)
+    name: ClearCookiesFor
+    isExternal: true
+    href: Sdl.Desktop.Platform.Controls.Browser.ICookieManager.html#Sdl_Desktop_Platform_Controls_Browser_ICookieManager_ClearCookiesFor_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
